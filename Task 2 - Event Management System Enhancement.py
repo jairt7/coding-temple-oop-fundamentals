@@ -12,5 +12,10 @@ class Event:
     def add_participant(self):
         how_many = int(input("How many participants would you like to add? Please enter a number: "))
         self.participants += how_many
+    
+    def get_participant_count(self):
+        print(f"There are {self.participants} people participating in this event.")
 
 party = Event("party", "Friday", 3)
+party.add_participant()
+party.get_participant_count()
